@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The Uprising</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+
+        }
+
+        nav {
+            position: fixed;
+            color: white;
+            background-color: rgba(131, 122, 45, 0.849);
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            z-index: 3;
+
+
+        }
+
+        nav a {
+            margin: 5px;
+            font-size: large;
+            text-decoration: none;
+            color:white;
+            margin-right: 30px;;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://api.time.com/wp-content/uploads/2016/02/gettyimages-509087628.jpg?w=800&quality=85");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .background-overlay {
+            background-color: rgba(0, 0, 0, 0.575);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+
+            justify-content: space-around;
+
+        }
+
+        .background-overlay h1 {
+            align-self: center;
+            justify-self: center;
+            color: gainsboro;
+            font-size: 5em;
+        }
+
+        .background-overlay .utility {
+            display: flex;
+            color: rgb(255, 255, 255);
+            align-content: start;
+            flex-direction: column;
+
+        }
+
+        .background-overlay .utility div {
+            height: 40px;
+            width: 200px;
+            padding: 1%;
+        }
+
+
+        .screen {
+            width: 100%;
+            height: auto;
+            background-color: white;
+
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 90%;
+            padding: 5px;
+            text-align: center;
+            line-height: 1.8pc;
+        }
+
+        .product .product-title {
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        .product .product-cost {
+
+            font-weight: 600;
+
+        }
+
+        .product img {
+            width: 320px;
+            height: auto;
+            z-index: 0;
+        }
+
+        .product button {
+            padding: 2%;
+            border: 0.1px solid gray;
+
+            border-radius: 2%;
+        }
+
+        .checkout{
+            background-color: firebrick;
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout textarea {
+            width:360px;
+            height:50px;
+        }
+        .checkout input{
+            border: none;
+            margin:10px;
+            height:50px;
+
+        }
+        .checkout input[type="submit"]{
+            background-color: green;
+            color: honeydew;
+            width:70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#Products">Products </a>
+        <a href="#checout">Checkout</a>
+        
+    </nav>
+    <header id="Home">
+        <div class="background-overlay">
+            <h1>The Uprising</h1>
+            <div class="utility">
+                <p>Stand for your rights! against these Companies</p>
+                <div style="background-color: gold;">
+                    <p>Light Company</p>
+                </div>
+                <div style="background-color: rgb(0, 129, 196);">
+                    <p>Phone Company</p>
+                </div>
+                <div style="background-color: rgb(255, 0, 0);">
+                    <p>The Other Phone Company</p>
+                </div>
+                <div style="color: rgb(8, 8, 8); background-color: rgb(255, 255, 255);">
+                    <p>The OUR</p>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <div class="screen" id="Products">
+        <div class="product">
+            <img src="https://cdn3.volusion.com/stlse.vzhek/v/vspfiles/photos/SDCC19AMTD-2.jpg?v-cache=1559196191" />
+            <p class="product-title">Silver Trident</p>
+            <p class="product-cost">$800.00</p>
+            <p>Are you going to be caught in the uprising with a dirty old pitchfork?
+                Do one better and get this silver trident.
+            </p>
+            <button>Add To Cart</button>
+        </div>
+
+        <div class="product">
+            <img
+                src="https://lh3.googleusercontent.com/proxy/FiSd_ugr1WAp6-AqxuojuUg6YCu8iJl-ZPjtz3EoQ2VjJxvqec-JC4mO8zOCsd2LiVYRmpiyW4c0Q0COHIVNL-A3sZJYCuNvVXbptICZ20jtvWNZg2rItME" />
+            <p class="product-title">Torch</p>
+            <p class="product-cost">$600.00</p>
+            <p>No uprising is complete until you have a torch or several hundreds!
+                Fire sold seperately.
+            </p>
+            <button>Add To Cart</button>
+        </div>
+            <div class="product">
+                <img src="https://i.ya-webdesign.com/images/stone-clipart-transparent-background-10.png" />
+                <p class="product-title">Smooth Stone</p>
+                <p class="product-cost">$800.00</p>
+                <p>Do you want to see what your money is being used to buy? glass, windows. break them all!!!!
+                </p>
+                <button>Add To Cart</button>
+
+            </div>
+            <div class="screen" id="Checkout"></div>
+            <div class="screen" id="Contact"></div>
+
+</div>
+<div class="screen checkout">
+    <p>
+        For your safety and mine, you must give us your details and after which we will contact you. No politically correct official is bringing us down!
+        </p>
+        <form>
+            <textarea placeholder="Your Order" required>
+
+            </textarea>
+            <input type="email" placeholder="email address please!" required/>
+            <input type="submit"value="submit"/>
+        </form>
+
+</div>
+
+</body>
+
+</html>
